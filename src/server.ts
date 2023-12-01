@@ -25,7 +25,7 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
 
 // Initialise schuduler to run daily at 6 AM
-crawlSchedule();
+// crawlSchedule();
 
 // Setup routes
 app.get('/', (req, res) => {
@@ -39,9 +39,9 @@ router.use((err: Error, req: Request, res: Response, next: NextFunction) => {
 	res.status(500).json({ error: 'Internal Server Error' });
 });
 
-startCrawling().catch((error) => {
-	console.error('Crawling error:', error);
-});
+// startCrawling().catch((error) => {
+// 	console.error('Crawling error:', error);
+// });
 
 app.listen(port, () => {
 	console.log(`Server is running on port ${port}`);
