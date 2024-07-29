@@ -23,7 +23,7 @@
 		"mongoose": "^8.0.0",
 		"node-cron": "^3.0.2",
 		"node-schedule": "^2.1.1",
-		"puppeteer": "^21.4.1",
+		"puppeteer": "^22.14.0",
 		"winston": "^3.11.0"
 	},
 	"devDependencies": {
